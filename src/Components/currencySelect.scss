@@ -1,0 +1,31 @@
+.currency {
+  width: 80px;
+  position: relative;
+  &-btn {
+    padding: 10px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+  &-content {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: #fff;
+    box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+    color: #333;
+    z-index: 10;
+  }
+  &-item {
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      background: #f4f4f4;
+    }
+  }
+}
