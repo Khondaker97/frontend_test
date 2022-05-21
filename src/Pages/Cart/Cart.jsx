@@ -25,8 +25,8 @@ class Cart extends Component {
       return sum;
     };
     const total = Number(sumOfPrices(subTotal));
-    const tax = (total * 0.21).toFixed(2);
-    const pay = total + Number(tax);
+    const tax = total * 0.21;
+    const pay = total + tax;
 
     return (
       <Container>
@@ -40,7 +40,7 @@ class Cart extends Component {
         <SidebarFooter>
           <TotalValue>
             <Value>
-              Tax(21%): <h3>$ {tax}</h3>
+              Tax(21%): <h3>$ {tax.toFixed(2)}</h3>
             </Value>
             {/* <Value>
               Quantity: <h3></h3>
